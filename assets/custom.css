@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
+:root {
+    --font-size-body1: 16px;
+    --font-size-body2: 18px;
+}
 
 
 /* TYPOGRAPHY */
@@ -49,6 +53,17 @@ h6 {
     letter-spacing: 0em !important;
 }
 
-body {
+body,
+p,
+span {
     font-family: 'DM Sans', sans-serif !important;
+}
+
+/* ANNOUNCEMENT BAR */
+.announcement-bar {
+    height: 46px;
+}
+
+.announcement-bar__message {
+    font-size: var(--font-size-body1) !important;
 }
