@@ -3323,3 +3323,6 @@ details-disclosure > details {
     --sparkle: url('./sparkle.gif');
   }
 }
+
+@font-face {
+font-family: "Plus Jakarta Sans";src: url({{ "PlusJakartaSans-Bold.woff" | asset_url }}) format("WOFF");
