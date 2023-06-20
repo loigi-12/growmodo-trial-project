@@ -35,7 +35,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-min.png",
+        "image": "shopify:\/\/shop_images\/banner-2x.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "top-center",
