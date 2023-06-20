@@ -13,6 +13,7 @@ h5,
 h6 {
     font-family: 'Plus Jakarta Sans', sans-serif !important;
     font-weight: bold !important;
+    letter-spacing: 0px !important;
 }
 
 h1 {
@@ -52,7 +53,8 @@ h6 {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif !important;
+    font-family: 'DM Sans' !important;
+    letter-spacing: 0px !important;
 }
 
 /* BUTTONS */
@@ -85,14 +87,16 @@ body {
 
 .announcement-bar__message {
     font-size: 16px !important;
-    font-weight: 500;
+    font-family: 'DM Sans' !important;
+    line-height: 32px;
+    font-weight: 400;
 }
 
 
 /* NAVIGATION BAR */
 @media screen and (min-width: 768px) {
     .header--middle-left {
-        column-gap: 5.5rem !important;
+        column-gap: 4.5rem !important;
     }
 
 }
@@ -110,6 +114,18 @@ nav.header__inline-menu ul.list-menu.list-menu--inline {
 
 header.page-width {
     max-width: 98% !important;
+}
+
+@media screen and (min-width: 990px) {
+    .header {
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+    }
+
+    .header:not(.drawer-menu).page-width {
+        padding-left: 4.5rem !important;
+        padding-right: 4.5rem !important;
+    }
 }
 
 /* HERO or BANNER */
@@ -146,5 +162,7 @@ header.page-width {
 }
 
 .banner__content .banner__buttons {
+    gap: 2rem;
     margin-top: 5rem !important;
+    max-width: 60rem;
 }
