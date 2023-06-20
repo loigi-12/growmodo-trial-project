@@ -536,17 +536,23 @@
       text-decoration: none;
     }
 
+    @media screen and (max-width: 1130px) {
+      .header__account_url .link {
+        padding: 0;
+      }
+    }  
+
   {%  else %}
     .header__account_url {
       display: none;      
     }
   {% endif %}
   
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 1130px) {
     .header__account_url {
       display: none;
     }
-  }
+  }  
 </style>
 
 {% schema %}
