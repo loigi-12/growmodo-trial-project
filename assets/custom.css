@@ -68,6 +68,7 @@ body {
 
 .button--primary {
     background: linear-gradient(137.82deg, #0289FF 2.55%, #0258FF 98.09%);
+    color: #fff;
 }
 
 .button:after {
