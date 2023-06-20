@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
-:root {
-    --font-size-body1: 16px;
-    --font-size-body2: 18px;
-}
+:root {}
 
 
 /* TYPOGRAPHY */
@@ -61,15 +58,20 @@ body {
 /* BUTTONS */
 .button {
     font-family: 'Plus Jakarta Sans', sans-serif !important;
-    font-size: var(--font-size-body1);
+    font-size: 18px;
     font-weight: 700;
     border-radius: 8px;
     border: 0 !important;
+    padding-block: 2rem;
 }
 
 .button--primary {
     background: linear-gradient(137.82deg, #0289FF 2.55%, #0258FF 98.09%);
     color: #fff;
+}
+
+.button--secondary {
+    border: 1px solid #140626 !important;
 }
 
 .button:after {
@@ -82,7 +84,7 @@ body {
 }
 
 .announcement-bar__message {
-    font-size: var(--font-size-body1) !important;
+    font-size: 16px !important;
     font-family: 'Plus Jakarta Sans', sans-serif !important;
     font-weight: 500;
 }
@@ -101,7 +103,7 @@ nav.header__inline-menu ul.list-menu.list-menu--inline {
 }
 
 .header__inline-menu .link {
-    font-size: var(--font-size-body1);
+    font-size: 16px;
     font-family: 'Plus Jakarta Sans', sans-serif !important;
     font-weight: 500;
     color: #18181B;
@@ -109,4 +111,40 @@ nav.header__inline-menu ul.list-menu.list-menu--inline {
 
 header.page-width {
     max-width: 98% !important;
+}
+
+/* HERO or BANNER */
+@media screen and (min-width: 750px) {
+    .banner__box {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .banner--large:not(.banner--adapt) {
+        min-height: 1050px !important;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .banner__content {
+        padding-block: 7.8rem !important;
+    }
+}
+
+.banner__content .banner__heading {
+    line-height: 72px;
+}
+
+.banner__content .banner__text {
+    color: #5C5665;
+    font-size: 22px;
+    line-height: 32px;
+    margin-inline: auto;
+    margin-top: 2.7rem !important;
+    width: 80%;
+}
+
+.banner__content .banner__buttons {
+    margin-top: 5rem !important;
 }
