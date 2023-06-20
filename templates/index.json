@@ -6,8 +6,15 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "Create and sell customized products",
             "heading_size": "h0"
+          }
+        },
+        "dabda293-8c13-483b-8964-c779cac9c1a2": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed, eu phasellus cum volutpat vehicula cursus feugiat parturient tempor.",
+            "text_style": "body"
           }
         },
         "button": {
@@ -24,6 +31,7 @@
       },
       "block_order": [
         "heading",
+        "dabda293-8c13-483b-8964-c779cac9c1a2",
         "button"
       ],
       "settings": {
