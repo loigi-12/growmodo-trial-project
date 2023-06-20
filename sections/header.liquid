@@ -245,6 +245,15 @@
       {%- endif -%}
     {%- endif -%}
 
+    <div class="header__account_url">
+      <a class="link" href="{{ routes.account_login_url }}">
+        <span>Login</span>
+      </a>
+      <a class="button button--primary link" href="{{ routes.account_register_url }}">
+        <span>Sign Up</span>
+      </a>
+    </div>
+
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header__localization{% endif %}">
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -505,6 +514,41 @@
   </script>
 {%- endif -%}
 
+{% comment %} CUSTOMIZED AREA {% endcomment %}
+<style>
+  {% if section.settings.enable-header-icons != true %}
+    .header__icons {
+      display: none;
+    }
+
+    .header__account_url {
+      display: flex;
+      align-items: center;
+      justify-self: end;
+      gap: 3rem;
+      grid-area: icons;
+    }
+    
+    .header__account_url .link {
+      font-family: 'Plus Jakarta Sans', sans-serif !important;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+  {%  else %}
+    .header__account_url {
+      display: none;      
+    }
+  {% endif %}
+  
+  @media screen and (max-width: 320px) {
+    .header__account_url {
+      display: none;
+    }
+  }
+</style>
+
 {% schema %}
 {
   "name": "t:sections.header.name",
@@ -678,6 +722,16 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Customized Area"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable-header-icons",            
+      "label": "Enable header icons",
+      "default": false
     }
   ],
   "blocks": [
