@@ -167,3 +167,23 @@ header.page-width {
     margin-top: 5rem !important;
     max-width: 60rem;
 }
+
+
+/* BRANDS */
+.brands-container {
+    text-align: center;
+    padding-block: 5rem;
+}
+
+.brands-container h6 {
+    color: #140626;
+}
+
+.brands {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8.6rem;
+    justify-content: center;
+    row-gap: 2.4em;
+}

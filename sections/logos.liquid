@@ -1,0 +1,47 @@
+<div class="brands-container">
+    <h6>{{ section.settings.title }}</h6>
+
+    <div class="brands">        
+        {% for block in section.blocks %}
+            <img src="{{ block.settings.img | img_url }}" alt="" />
+        {% endfor %}
+    </div>    
+</div>
+
+{% schema %}
+    {
+        "name": "Brands",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "We help businesses all around the world to grow"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "image",
+                "name": "Image",
+                "limit": 10,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "img",
+                        "label": "Image"                
+                    }
+                ]             
+            }
+        ],
+        "presets": [
+            {
+            "name": "Brands",
+                "blocks": [
+                    {
+                    "type": "image"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}
