@@ -99,10 +99,67 @@
       "settings": {
         "title": "We help businesses all around the world to grow"
       }
+    },
+    "d1b4e69c-4f13-4e81-82aa-2836e7aa3e70": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19554019901762__d1b4e69c-4f13-4e81-82aa-2836e7aa3e70-16873648287eed9161-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/profits_icon_0c3af841-6e04-4993-b617-3982f44a811c.svg",
+            "title": "Higher Profits",
+            "text": "<p>Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19554019901762__d1b4e69c-4f13-4e81-82aa-2836e7aa3e70-16873648287eed9161-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rocket_icon_dbdedac9-9be9-4ca9-bc8e-015061cc9b84.svg",
+            "title": "Robust Scaling",
+            "text": "<p>Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19554019901762__d1b4e69c-4f13-4e81-82aa-2836e7aa3e70-16873648287eed9161-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hand_icon_6fa4e01b-83dc-42e4-80cf-5920376e552c.svg",
+            "title": "Amazing Products",
+            "text": "<p>Vulputate ultrices maecenas tempus vehicula nostra dapibus, per proin vitae et porttitor primis sollicitudin faucibus scelerisque.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19554019901762__d1b4e69c-4f13-4e81-82aa-2836e7aa3e70-16873648287eed9161-0",
+        "template--19554019901762__d1b4e69c-4f13-4e81-82aa-2836e7aa3e70-16873648287eed9161-1",
+        "template--19554019901762__d1b4e69c-4f13-4e81-82aa-2836e7aa3e70-16873648287eed9161-2"
+      ],
+      "settings": {
+        "title": "We make your brand shine",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "31e13b13-efa5-406b-b447-fb035712bb7e"
+    "31e13b13-efa5-406b-b447-fb035712bb7e",
+    "d1b4e69c-4f13-4e81-82aa-2836e7aa3e70"
   ]
 }
