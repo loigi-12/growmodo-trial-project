@@ -48,37 +48,61 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "31e13b13-efa5-406b-b447-fb035712bb7e": {
+      "type": "logos",
+      "blocks": {
+        "template--19554019901762__31e13b13-efa5-406b-b447-fb035712bb7e-16873647305621f98b-0": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/06ee98edfed241ad77a2bd6148411110.svg"
+          }
+        },
+        "251e0ee3-39d0-4ea3-917d-82712cf94a58": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Asana.svg"
+          }
+        },
+        "5d8e7447-f35f-46aa-81e5-c41e7406d81e": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_9.svg"
+          }
+        },
+        "136e9909-fda2-4be4-909d-f045c9386b2a": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Buzzfeed.svg"
+          }
+        },
+        "8c6c4e06-bb66-426e-ad44-2dafd24f8a76": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/toggl.svg"
+          }
+        },
+        "d7ddf031-c8f9-47ae-8cb1-c76ed8373471": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Walmart.svg"
+          }
+        }
+      },
+      "block_order": [
+        "template--19554019901762__31e13b13-efa5-406b-b447-fb035712bb7e-16873647305621f98b-0",
+        "251e0ee3-39d0-4ea3-917d-82712cf94a58",
+        "5d8e7447-f35f-46aa-81e5-c41e7406d81e",
+        "136e9909-fda2-4be4-909d-f045c9386b2a",
+        "8c6c4e06-bb66-426e-ad44-2dafd24f8a76",
+        "d7ddf031-c8f9-47ae-8cb1-c76ed8373471"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "title": "We help businesses all around the world to grow"
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "31e13b13-efa5-406b-b447-fb035712bb7e"
   ]
 }
