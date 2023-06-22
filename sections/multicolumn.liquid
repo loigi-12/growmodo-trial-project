@@ -32,9 +32,13 @@
   >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+       <div class="g-grid g-grid--1x3">
+         <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>
+        <span></span>
+        <p>Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin.<p>
+      </div>
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
             {{- section.settings.button_label | escape -}}
@@ -188,6 +192,14 @@
     </div>
   </div>
 </div>
+
+<style>
+  {% if section.settings.image_ratio == 'circle' %}
+    .multicolumn-card__image-wrapper--third-width {
+      width: {{ section.settings.new_image_ratio }}%;
+    }
+  {% endif %}
+</style>
 
 {% schema %}
 {
@@ -375,6 +387,20 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "CUSTOMIZED AREA"
+    },
+    {
+      "type": "range",
+      "id": "new_image_ratio",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "New image ratio",
+      "default": 27
     }
   ],
   "blocks": [
