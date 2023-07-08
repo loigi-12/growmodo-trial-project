@@ -188,6 +188,12 @@ header.page-width {
     row-gap: 2.4rem;
 }
 
+
+
+
+
+
+
 /* GRIDS */
 .g-grid {
     display: grid;
@@ -196,6 +202,13 @@ header.page-width {
 @media screen and (min-width: 768px) {
     .g-grid--1x3 {
         grid-template-columns: 1fr .5fr 1fr;
+    }
+}
+
+/* PAGE WITH */
+@media screen and (min-width: 1441px) {
+    .page-width {
+        min-width: 1440px !important;
     }
 }
 
