@@ -37,6 +37,7 @@
           {{ section.settings.title }}
         </h2>
         <span></span>
+
         <p>Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin.<p>
       </div>
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
@@ -235,6 +236,11 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Description"
     },
     {
       "type": "select",
