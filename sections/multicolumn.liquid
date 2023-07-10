@@ -23,16 +23,31 @@
   endif
 -%}
 
-<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
-  <div
-    class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+<div class="{{ section.settings.className }} multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+
+{% if section.settings.element == "1" %}
+  <!-- Elements -->
+  <span style="
+      position: absolute;
+      bottom: 400px;
+      height: 51px;
+      left: -653px;
+      object-fit: contain;
+  ">
+    
+  {% render 'element01' %}
+    
+  </span>
+{% endif %}
+
+<div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
   >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
-       <div class="g-grid g-grid--1x3">
+       <div class="{% if section.settings.display == "d_inline" %}g-grid g-grid--1x3 g-inline{% else %}g-block{% endif %}">
          <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>
@@ -212,6 +227,10 @@
   },
   "settings": [
     {
+      "type": "header",
+      "content": "HEADER"
+    },
+    {
       "type": "inline_richtext",
       "id": "title",
       "default": "Multicolumn",
@@ -241,6 +260,26 @@
       "type": "text",
       "id": "subtitle",
       "label": "Description"
+    },
+    {
+      "type": "select",
+      "id": "display",
+      "options": [
+        {
+          "value": "d_block",
+          "label": "Block"
+        },
+        {
+          "value": "d_inline",
+          "label": "Inline"
+        }
+      ],
+      "default": "d_inline",
+      "label": "Display"
+    },
+    {
+      "type": "header",
+      "content": "IMAGE"
     },
     {
       "type": "select",
@@ -285,6 +324,48 @@
       ],
       "default": "adapt",
       "label": "t:sections.multicolumn.settings.image_ratio.label"
+    },
+    {
+      "type": "header",
+      "content": "Image Customized Area"
+    },
+    {
+      "type": "range",
+      "id": "new_image_ratio",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "New image ratio",
+      "default": 27
+    },
+    {
+      "type": "header",
+      "content": "ELEMENTS CONTROL"
+    },
+    {
+      "type": "select",
+      "id": "element",
+      "options": [
+        {
+          "value": "-*-",
+          "label": "--select an element--"
+        },
+        {
+          "value": "1",
+          "label": "element #1"
+        },
+        {
+          "value": "2",
+          "label": "element #2"
+        },
+        {
+          "value": "3",
+          "label": "element #3"
+        }
+      ],
+      "default": "-*-",
+      "label": "Element"
     },
     {
       "type": "range",
@@ -395,18 +476,9 @@
       "default": 36
     },
     {
-      "type": "header",
-      "content": "CUSTOMIZED AREA"
-    },
-    {
-      "type": "range",
-      "id": "new_image_ratio",
-      "min": 20,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "New image ratio",
-      "default": 27
+      "type": "text",
+      "id": "className",
+      "label": "Class Name"
     }
   ],
   "blocks": [
