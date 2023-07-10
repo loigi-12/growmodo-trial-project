@@ -202,12 +202,71 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "e2d8dc74-7a75-4f28-897a-4776f6c3cd6f": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19554019901762__e2d8dc74-7a75-4f28-897a-4776f6c3cd6f-16890100829aef5ae5-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/upload_design.png",
+            "title": "Upload Your Design",
+            "text": "<p>Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19554019901762__e2d8dc74-7a75-4f28-897a-4776f6c3cd6f-16890100829aef5ae5-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beautiful_mockups.png",
+            "title": "We Put it on Beautiful Mockups",
+            "text": "<p>Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19554019901762__e2d8dc74-7a75-4f28-897a-4776f6c3cd6f-16890100829aef5ae5-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/product_platform.png",
+            "title": "List the Products on Your Platform",
+            "text": "<p>Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19554019901762__e2d8dc74-7a75-4f28-897a-4776f6c3cd6f-16890100829aef5ae5-0",
+        "template--19554019901762__e2d8dc74-7a75-4f28-897a-4776f6c3cd6f-16890100829aef5ae5-1",
+        "template--19554019901762__e2d8dc74-7a75-4f28-897a-4776f6c3cd6f-16890100829aef5ae5-2"
+      ],
+      "settings": {
+        "title": "How It Works",
+        "heading_size": "h1",
+        "subtitle": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin.",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "new_image_ratio": 27
+      }
     }
   },
   "order": [
     "image_banner",
     "31e13b13-efa5-406b-b447-fb035712bb7e",
     "d1b4e69c-4f13-4e81-82aa-2836e7aa3e70",
-    "2b0fa617-f4c5-4393-a5ec-77f9b9d760f3"
+    "2b0fa617-f4c5-4393-a5ec-77f9b9d760f3",
+    "e2d8dc74-7a75-4f28-897a-4776f6c3cd6f"
   ]
 }
