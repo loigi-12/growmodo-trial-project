@@ -274,6 +274,51 @@
         "padding_bottom": 36,
         "className": "m-block-h"
       }
+    },
+    "6ca59df9-5eaf-4f71-ad50-f04590bae16a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19554019901762__6ca59df9-5eaf-4f71-ad50-f04590bae16a-1689065263d0920ada-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Connect Your Store",
+            "heading_size": "h2"
+          }
+        },
+        "template--19554019901762__6ca59df9-5eaf-4f71-ad50-f04590bae16a-1689065263d0920ada-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Odio dui dictumst tortor ridiculus a condimentum auctor sed, varius etiam nostra molestie interdum arcu neque, enim tellus ullamcorper at lacus.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--19554019901762__6ca59df9-5eaf-4f71-ad50-f04590bae16a-1689065263d0920ada-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Connect It Now",
+            "button_link": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--19554019901762__6ca59df9-5eaf-4f71-ad50-f04590bae16a-1689065263d0920ada-0",
+        "template--19554019901762__6ca59df9-5eaf-4f71-ad50-f04590bae16a-1689065263d0920ada-1",
+        "template--19554019901762__6ca59df9-5eaf-4f71-ad50-f04590bae16a-1689065263d0920ada-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/integrate.svg",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -281,6 +326,7 @@
     "31e13b13-efa5-406b-b447-fb035712bb7e",
     "d1b4e69c-4f13-4e81-82aa-2836e7aa3e70",
     "2b0fa617-f4c5-4393-a5ec-77f9b9d760f3",
-    "e2d8dc74-7a75-4f28-897a-4776f6c3cd6f"
+    "e2d8dc74-7a75-4f28-897a-4776f6c3cd6f",
+    "6ca59df9-5eaf-4f71-ad50-f04590bae16a"
   ]
 }
