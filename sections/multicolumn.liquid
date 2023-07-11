@@ -26,18 +26,18 @@
 <div class="{{ section.settings.className }} multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
 
 {% if section.settings.element == "1" %}
-  <!-- Elements -->
-  <span style="
-      position: absolute;
-      bottom: 400px;
-      height: 51px;
-      left: -653px;
-      object-fit: contain;
-  ">
-    
-  {% render 'element01' %}
-    
+  <span class="element{{ section.settings.element }}">
+    {% render 'element01' %}
   </span>
+
+  <style>
+    .element{{ section.settings.element }}>svg {
+      position: absolute;
+      height: {{ section.settings.element-h }}px;
+      width: {{ section.settings.element-w }}px;
+      transform: translate({{ section.settings.element-x }}px, {{ section.settings.element-y }}px)
+    }
+  </style>
 {% endif %}
 
 <div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -340,6 +340,14 @@
       "default": 27
     },
     {
+      "settings": [
+        {
+          "type": "header",
+          "content": "HEADER"
+        }
+      ]
+    },
+    {
       "type": "header",
       "content": "ELEMENTS CONTROL"
     },
@@ -366,7 +374,31 @@
       ],
       "default": "-*-",
       "label": "Element"
+    },      
+    {
+      "type": "number",
+      "id": "element-w",
+      "default": 671,
+      "label": "width"
     },
+    {
+      "type": "number",
+      "id": "element-h",
+      "default": 882,
+      "label": "height"
+    },
+    {
+      "type": "number",
+      "id": "element-x",
+      "default": 0,
+      "label": "x-axis"
+    },
+    {
+      "type": "number",
+      "id": "element-y",
+      "default": 0,
+      "label": "y-axis"
+    },    
     {
       "type": "range",
       "id": "columns_desktop",
