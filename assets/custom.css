@@ -282,3 +282,22 @@ header.page-width {
 .m-block-h .multicolumn-card .multicolumn-card__info>.rte {
     margin-top: 20px;
 }
+
+
+
+/* INTEGRATE SECTION */
+.em-styles-s .image-with-text__content {
+    padding: 0;
+}
+
+.em-styles-s .image-with-text__media {
+    border: 0;
+}
+
+h2.image-with-text__heading.inline-richtext.h3 {
+    font-size: 32px !important;
+}
+
+.em-styles-s .image-with-text__text.rte.body {
+    margin-top: 1.7rem;
+}
