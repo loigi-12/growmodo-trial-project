@@ -16,7 +16,7 @@
 
 {% assign scheme1 = settings.color_schemes | first %}
 
-<div class="{{ section.settings.className }} {{ section.settings.themes }} image-with-text image-with-text--{{ section.settings.content_layout }} page-width isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == scheme1 and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+<div class="image-with-text image-with-text--{{ section.settings.content_layout }} page-width isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == scheme1 and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
   <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
     <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
       <div
@@ -56,8 +56,6 @@
       >
         {%- for block in section.blocks -%}
           {% case block.type %}
-            {%- when 'icon' -%}
-              <img src="{{ block.settings.icon_h | image_url }}">
             {%- when 'heading' -%}
               <h2
                 class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
@@ -97,25 +95,6 @@
   </div>
 </div>
 
-<script>
-
-<style>
-  div:has(.{{ section.settings.className }}.dark) {
-    background: #140626;
-  }
-
-  .{{ section.settings.className }}.dark h1, 
-  .{{ section.settings.className }}.dark h2, 
-  .{{ section.settings.className }}.dark h3, 
-  .{{ section.settings.className }}.dark h4 {
-    color: #ECECFA;
-  }
-
-  .{{ section.settings.className }}.dark p {
-    color: #E9E6EF;
-  }
-</style>
-
 {% schema %}
 {
   "name": "t:sections.image-with-text.name",
@@ -124,22 +103,6 @@
     "groups": ["header", "footer"]
   },
   "settings": [
-    {
-      "type": "select",
-      "id": "themes",
-      "options": [
-        {
-          "value": "light",
-          "label": "Default"
-        },
-        {
-          "value": "dark",
-          "label": "Dark"
-        }
-      ],
-      "default": "light",
-      "label": "Theme"
-    },
     {
       "type": "image_picker",
       "id": "image",
@@ -336,26 +299,9 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
-    {
-      "type": "text",
-      "id": "className",
-      "label": "Class Name"
     }
   ],
   "blocks": [
-    {
-      "type": "icon",
-      "name": "Icon",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "icon_h",
-          "label": "Icon"
-        }
-      ]
-    },
     {
       "type": "heading",
       "name": "t:sections.image-with-text.blocks.heading.name",
@@ -371,10 +317,6 @@
           "type": "select",
           "id": "heading_size",
           "options": [
-            {
-              "value": "h3",
-              "label": "Smaller"
-            },
             {
               "value": "h2",
               "label": "t:sections.all.heading_size.options__1.label"
